@@ -29,6 +29,15 @@ CLIP or Contrastive Language - Image Pre-training, deviates from the standard pr
 
 `Given an image, a set of 32,768 sampled text snippets was paired with it in our dataset. For example, given a task to predict a number from an image, the model is likely to predict that “the number is one” or, “the number is two”, or “the number is XYZ” and so on.`
 
+<h1 align = 'center',id = "PACL"> 🤗 Patch Aligned Contrastive Learning </h1>
+
+The paper Patch Aligned Contrastive Learning (PACL) introduces, a modified compatibility function for CLIP's contrastive loss which enables the task of Open Vocabulary Semantic Segmentation to be transferred seamlessly without requiring any segmentation annotations during training. Using pre-trained CLIP encoders with PACL, the authors are able to set the state-of-the-art on four different segmentation benchmarks.
+
+- PACL is a modified compatibility function for CLIP's contrastive loss that enables a model to identify regions of an image corresponding to a given text input.
+- PACL is applied to pre-trained CLIP encoders to set the state-of-the-art on four different segmentation benchmarks.
+- PACL is also applicable to image-level predictions and provides a general improvement in zero-shot classification accuracy compared to CLIP, across a suite of 12 image classification datasets.
+
+
 <h1 align = 'center', id = "clip-architecture">  🧠 CLIP Architecture </h1>
 
 **Architecture**
@@ -42,6 +51,5 @@ CLIP or Contrastive Language - Image Pre-training, deviates from the standard pr
 **Architecture**
 
 <p align = 'center'>
-            <img src = "Images/PACL-Architecture.png" />
+            <img src = "Images/PACL-Architecture (2).png" />
 </p>
-
