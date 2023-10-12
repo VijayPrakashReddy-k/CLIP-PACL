@@ -12,7 +12,11 @@
 
 - [Contrastive Language - Image Pre-training](./README.md/#CLIP)
 - [Patch Aligned Contrastive Learning](./README.md/#PACL)
-- [Architecture](./README.md/#architecture)
+- Architectures:
+
+  • [CLIP](./README.md/#clip-architecture)
+  • [PACL](./README.md/#pacl-architecture)
+  
 - [Core Concepts](./README.md/#TERMS)
 - [Assignment](./README.md/#Assignment)
 - [DEMO](./README.md/#demo)
@@ -25,7 +29,7 @@ CLIP or Contrastive Language - Image Pre-training, deviates from the standard pr
 
 `Given an image, a set of 32,768 sampled text snippets was paired with it in our dataset. For example, given a task to predict a number from an image, the model is likely to predict that “the number is one” or, “the number is two”, or “the number is XYZ” and so on.`
 
-<h1 align = 'center', id = "architecture">  🧠 CLIP Architecture </h1>
+<h1 align = 'center', id = "clip-architecture">  🧠 CLIP Architecture </h1>
 
 **Architecture**
 
@@ -33,5 +37,11 @@ CLIP or Contrastive Language - Image Pre-training, deviates from the standard pr
             <img src = "Images/CLIP-Architecture.png" />
 </p>
 
+<h1 align = 'center', id = "pacl-architecture">  🧠 PACL Architecture </h1>
 
+**Architecture**
+
+<p align = 'center'>
+            <img src = "Images/PACL-Architecture.png" />
+</p>
 
