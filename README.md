@@ -42,14 +42,24 @@ The paper Patch Aligned Contrastive Learning (PACL) introduces, a modified compa
 
 **Architecture**
 
-<p align = 'center'>
-            <img src = "Images/CLIP-Architecture.png" />
+<p align='center'>
+    <img src='Images/CLIP-Architecture.png' alt='CLIP Architecture' />
+    Figure: Summary of the CLIP approach. While standard image models jointly train an image feature extractor and a linear classifier to predict
+some label, CLIP jointly trains an image encoder and a text encoder to predict the correct pairings of a batch of (image, text) training
+examples. At test time the learned text encoder synthesizes a zero-shot linear classifier by embedding the names or descriptions of the
+target dataset’s classes.
 </p>
 
 <h1 align = 'center', id = "pacl-architecture">  🧠 PACL Architecture </h1>
 
 **Architecture**
 
-<p align = 'center'>
-            <img src = "Images/PACL-Architecture (2).png" />
-</p>
+<div style="display: flex; align-items: center; text-align: center;">
+    <img src = "Images/PACL-Architecture (2).png" alt='PACL Architecture' style="max-width: 50%; padding: 10px;">
+    <div style="flex: 1; text-align: left;">
+        <p>Figure: Compatibility function φ(x, y) for Patch Aligned Contrastive Learning (PACL).</p>
+        <p>The image encoder f<sub>v</sub> and embedder e^v produce patch-level representations for each image whereas the text encoder ft and embedder et produce the CLS representation for a given text.</p>
+        <p>We compute the cosine similarity between the CLS text embedding and the vision patch embeddings and use them as weights to take a weighted sum over vision patch tokens.</p>
+        <p>We use the cosine similarity between the weighted sum and the CLS text token as our compatibility φˆ(x, y).</p>
+    </div>
+</div>
