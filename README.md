@@ -23,11 +23,24 @@
 
 <h1 align = 'center',id = "CLIP"> 🤗 Contrastive Language - Image Pre-training (CLIP) </h1>
 
-CLIP or Contrastive Language - Image Pre-training, deviates from the standard practice of fine-tuning a pre-trained model by taking the path of zero-shot learning. Zero-shot learning is the ability of the model to perform tasks that it was not explicitly programmed to do. The core idea of the CLIP paper is essentially to learn visual representation from the massive corpus of natural language data. The paper showed that a simple pre-training task is sufficient to achieve a competitive performance boost in zero-shot learning.
+**Intuition:**
+The intuition behind OpenAI's CLIP model, as presented in the ["Learning Transferable Visual Models From Natural Language Supervision"](https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Farxiv.org%2Fabs%2F2103.00020) paper, is to create a model that can understand the intricate relationship between natural language descriptions and images. Instead of traditional image classification models that are trained to recognize specific objects or classes (e.g., cars, dogs), CLIP is trained to comprehend complete sentences, which allows it to learn more nuanced patterns and associations between images and text. This broader understanding enables CLIP to perform multiple tasks, including image classification and information retrieval, based on text descriptions.
+
+**Problem:**
+The problem that CLIP aims to address is the limitation of conventional computer vision and natural language models that often work in isolation. These models struggle to bridge the gap between images and textual descriptions, making it challenging to perform tasks such as searching for images based on text queries or understanding the context of images. Existing models typically rely on pre-defined labels or categories for images, which can be limiting and fail to capture the richness of human language.
+
+**Solution:**
+OpenAI's solution, CLIP, involves training a model to understand the relationships between images and text in a more holistic way. Instead of focusing on specific object recognition or classification, CLIP is trained to associate entire sentences with images. This approach allows CLIP to learn a wide range of connections between different textual descriptions and the visual content they refer to, making it highly versatile. As a result, CLIP can be used for tasks like image classification, object detection, and information retrieval, all while being trained primarily on textual descriptions. This approach breaks the traditional silos between vision and language and enables the model to generalize across various tasks, outperforming specialized models on benchmark datasets, including ImageNet, for image classification.
+
+CLIP or Contrastive Language - Image Pre-training, deviates from the standard practice of fine-tuning a pre-trained model by taking the path of **Zero-Shot Learning**. 
+
+        Zero-shot learning is the ability of the model to perform tasks that it was not explicitly programmed to do. 
+    
+The core idea of the CLIP paper is essentially to learn visual representation from the massive corpus of natural language data. The paper showed that a simple pre-training task is sufficient to achieve a competitive performance boost in zero-shot learning.
 
 *The objective of the CLIP model can be understood as follows:*
 
-`Given an image, a set of 32,768 sampled text snippets was paired with it in our dataset. For example, given a task to predict a number from an image, the model is likely to predict that “the number is one” or, “the number is two”, or “the number is XYZ” and so on.`
+**`Given an image, a set of 32,768 sampled text snippets was paired with it in our dataset. For example, given a task to predict a number from an image, the model is likely to predict that “the number is one” or, “the number is two”, or “the number is XYZ” and so on.`**
 
 <h1 align = 'center',id = "PACL"> 🤗 Patch Aligned Contrastive Learning </h1>
 
