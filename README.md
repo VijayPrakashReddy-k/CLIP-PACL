@@ -76,3 +76,9 @@ target dataset’s classes.
         <p>We use the cosine similarity between the weighted sum and the CLS text token as our compatibility φˆ(x, y).</p>
     </div>
 </div>
+
+<h1 align = 'center', id = "demo"> DEMO </h1>
+
+https://github.com/VijayPrakashReddy-k/CLIP-PACL/assets/42317258/d7dfaa3d-156a-4baf-a361-65a4396b2f59
+
+
